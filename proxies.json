@@ -6,18 +6,18 @@
         "methods": [
           "GET"
         ],
-        "route": "/npm/{organization}/{project}/{feedId}/registry/-/v1/search"
+        "route": "/npm/{organization}/{feedId}/registry/-/v1/search"
       },
-      "backendUri": "https://localhost/api/{organization}/{project}/{feedId}/search"
+      "backendUri": "https://localhost/api/{organization}/{feedId}/search"
     },
     "allApi": {
       "matchCondition": {
         "methods": [
           "GET"
         ],
-        "route": "/npm/{organization}/{project}/{feedId}/registry/-/all"
+        "route": "/npm/{organization}/{feedId}/registry/-/all"
       },
-      "backendUri": "https://localhost/api/{organization}/{project}/{feedId}/search"
+      "backendUri": "https://localhost/api/{organization}/{feedId}/search"
     },
     "azureDevOpsProxy": {
       "matchCondition": {
@@ -31,9 +31,9 @@
           "OPTIONS",
           "TRACE"
         ],
-        "route": "/npm/{organization}/{project}/{feedId}/{*restOfPath}"
+        "route": "/npm/{organization}/{feedId}/{*restOfPath}"
       },
-      "backendUri": "https://pkgs.dev.azure.com/{organization}/{project}/_packaging/{feedId}/npm/{restOfPath}"
+      "backendUri": "https://pkgs.dev.azure.com/{organization}/_packaging/{feedId}/npm/{restOfPath}"
     }
   }
 }

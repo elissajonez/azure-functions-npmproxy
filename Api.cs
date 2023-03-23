@@ -24,7 +24,6 @@ namespace Functions
     public static async Task<IActionResult> Search(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "{organization}/{project}/{feedId}/search")] HttpRequest req,
         string organization,
-        string project,
         string feedId,
         ILogger log)
     {
